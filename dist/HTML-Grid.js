@@ -1,5 +1,5 @@
 /*
- * Erkin-Grid version 1.1.0-beta
+ * HTML-Grid version 1.1.0-beta
  */
 /*****************************/
 //---> Create	:	1396.04.25
@@ -7,18 +7,18 @@
 //---> Update	:	1396.05.14
 /*****************************/
 $(document).ready(function () {
-	if ($('.erkin-grid').length > 0) {
+	if ($('.html-grid').length > 0) {
 		erkinGrid = new class_erkinGrid();
 	}
 });
 
 function class_erkinGrid () {
 	/*
-	 * master class is : "erkin-grid"
+	 * master class is : "html-grid"
 	 * child class is : "grid-item"
 	 * ==============================
 	 * usage example :
-	 * <div class="erkin-grid" data-gap="15" data-minwidth="250">
+	 * <div class="html-grid" data-gap="15" data-minwidth="250">
 	 *     <div class="grid-item">grid item 1</div>
 	 *     <div class="grid-item">grid item 2</div>
 	 *     <div class="grid-item">grid item 3</div>
@@ -36,7 +36,7 @@ function class_erkinGrid () {
 	this.init = function() {
 		self.handler();
 		
-		$.each($('.erkin-grid'), function(index, grid_master) {
+		$.each($('.html-grid'), function(index, grid_master) {
 			self.sort(grid_master);
 		});
 	};
